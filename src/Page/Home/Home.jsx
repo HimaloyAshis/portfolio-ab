@@ -25,6 +25,11 @@ const Home = () => {
                         <a href="#">Lets talk</a>
                     </div>
                 </div>
+                <div className='social'>
+                    <a href="#"><box-icon type='logo' name='linkedin'></box-icon></a>
+                    <a href="#"><box-icon type='logo' name='github'></box-icon></a>
+                    <a href="#"><box-icon name='facebook' type='logo' ></box-icon></a>
+                </div>
             </section>
         </>
     );

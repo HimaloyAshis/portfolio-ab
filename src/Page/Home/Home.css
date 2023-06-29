@@ -130,3 +130,26 @@
 .btn-box a:hover::before{
     width: 100%;
 }
+
+.social{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid #84d8de;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #75d3da;
+    text-decoration: none;
+}
