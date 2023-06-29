@@ -141,6 +141,7 @@
 }
 
 .social a{
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -152,4 +153,28 @@
     font-size: 20px;
     color: #75d3da;
     text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.social a:hover{
+    color: #081b29;
+}
+
+.social a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #75d3da;
+    z-index: -1;
+    transition: .5s;
+}
+
+.social a:hover::before{
+    width: 100%;
+    
 }
