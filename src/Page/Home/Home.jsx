@@ -4,25 +4,29 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <header>
-            <div className='home'>
-                <div className='lg:flex justify-between items-center px-4'>
+        <>
+            <header className='header'>
+                <a href="#" className='Logo'>AB</a>
+                <nav className='navbar'>
+                    <a href="#" className='active'>About</a>
+                    <a href="#">Work</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Get in touch</a>
+
+                </nav>
+            </header>
+            <section className='homes'>
+                <div>
+                    <h1>Hi, Im Himaloy</h1>
+                    <h3>Im a MERN-Stack developer</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptate optio laudantium perspiciatis quos architecto modi ut repellat fugiat sit. Incidunt, et. Tempore sed tempora excepturi consequatur quo dolorem at.</p>
                     <div>
-                        <h1>AB</h1>
+                        <a href="#">Hire me</a>
+                        <a href="#">Lets talk</a>
                     </div>
-                    <nav className='decoration-transparent lg:flex pr-2 gap-4'>
-                        <ul><Link>About</Link></ul>
-                        <ul><Link>Work</Link></ul>
-                        <ul><Link></Link></ul>
-                        <a href="#">About</a>
-                        <a href="#">Work</a>
-                        <a href="#">Portfolio</a>
-                        <a href="#">Get in touch</a>
-                        
-                    </nav>
                 </div>
-            </div>
-        </header>
+            </section>
+        </>
     );
 };
 
