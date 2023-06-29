@@ -16,11 +16,11 @@ const Home = () => {
                 </nav>
             </header>
             <section className='homes'>
-                <div>
-                    <h1>Hi, Im Himaloy</h1>
-                    <h3>Im a MERN-Stack developer</h3>
+                <div className='home-content'>
+                    <h1 >Hi, Im Himaloy</h1>
+                    <h3 className=''>Im a MERN-Stack developer</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptate optio laudantium perspiciatis quos architecto modi ut repellat fugiat sit. Incidunt, et. Tempore sed tempora excepturi consequatur quo dolorem at.</p>
-                    <div>
+                    <div className='btn-box'>
                         <a href="#">Hire me</a>
                         <a href="#">Lets talk</a>
                     </div>
