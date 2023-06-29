@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css'
 import { Link } from 'react-router-dom';
+import { FaBeer, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
     return (
@@ -26,9 +27,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='social'>
-                    <a href="#"><box-icon type='logo' name='linkedin'></box-icon></a>
-                    <a href="#"><box-icon type='logo' name='github'></box-icon></a>
-                    <a href="#"><box-icon name='facebook' type='logo' ></box-icon></a>
+                    <a href="#"><FaLinkedin></FaLinkedin> </a>
+                    <a href="#"><FaGithub></FaGithub></a>
+                    <a href="#"><FaFacebook></FaFacebook></a>
                 </div>
             </section>
         </>
