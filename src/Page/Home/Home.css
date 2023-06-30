@@ -50,7 +50,9 @@
 .homes{
     height: 100vh;
     display: flex;
-    /* background-image: url('https://images.unsplash.com/photo-1561487767-1f32d174cce0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmF0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60'); */
+    /* background: url('https://images.unsplash.com/photo-1551415923-58aba9efeb2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBlbmd1aW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60');
+    background-size: cover;
+    background-position: center; */
     align-items: center;
     padding: 0 5%;
 }
@@ -102,8 +104,9 @@
     border-radius: 8px;
     color: #081b29;
     text-decoration: none;
+    font-size: 1.8rem;
     font-weight: 600;
-    letter-spacing: 1.2px;
+    letter-spacing: .1rem;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -144,7 +147,7 @@
 
 .social{
     position: absolute;
-    bottom: 40px;
+    bottom: 2rem;
     width: 170px;
     /* background: red; */
     display: flex;
@@ -188,4 +191,20 @@
 .social a:hover::before{
     width: 100%;
     
+}
+
+.image-hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    /* border: 2px solid salmon; */
+    transition: .5s;
+}
+
+.image-hover:hover{
+    background: var(--bg-color);
+    opacity: .6;
 }

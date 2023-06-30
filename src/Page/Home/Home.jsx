@@ -30,11 +30,21 @@ const Home = () => {
                         <a href="#">Lets talk</a>
                     </div>
                 </div>
+                <img  className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
+                <div className='image-hover'>
+
+                </div>
                 <div className='social'>
                     <a href="#"><FaLinkedin></FaLinkedin> </a>
                     <a href="#"><FaGithub></FaGithub></a>
                     <a href="#"><FaFacebook></FaFacebook></a>
                 </div>
+            </section>
+
+            {/* about section */}
+
+            <section>
+                
             </section>
         </>
     );
