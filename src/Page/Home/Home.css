@@ -215,7 +215,8 @@
 }
 
 .about{
-    padding: 0 5%;
+    padding: 2rem 5%;
+    background: #0b3350;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,4 +290,25 @@ span{
 
 .btn-box.btns a{
     background: var(--second-bg-color);
+}
+
+.education{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education-row .education-column{
+    
 }

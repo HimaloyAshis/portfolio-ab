@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'
 import { Link } from 'react-router-dom';
-import { FaBars, FaBeer, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaBars, FaBeer, FaCalendar, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
     return (
@@ -14,6 +14,7 @@ const Home = () => {
                 <nav className='navbar'>
                     <a href="#home">Home</a>
                     <a href="#about" className='active'>About</a>
+                    <a href="#education">Education</a>
                     <a href="#work">Work</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#get in touch">Get in touch</a>
@@ -68,11 +69,19 @@ const Home = () => {
                         <div className="education-box">
                             <div className="education-content">
                                 <div className="content">
-                                    <div className='year'>
-                                        
-                                    </div>
+                                    <div className="year"><FaCalendar></FaCalendar>16-20</div>
+                                    <h3>Honours - Bangla, Kabi Nazrul Govt. College</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur totam nesciunt unde velit minus exercitationem sit blanditiis ad adipisci fuga nisi molestias sint obcaecati neque minima esse ea, fugiat soluta illum dignissimos ut reiciendis tempore sequi? Ut nam earum atque consequuntur !</p>
                                 </div>
                             </div>
+                            <div className="education-content">
+                                <div className="content">
+                                    <div className="year"><FaCalendar></FaCalendar>jan-23 - jul-23</div>
+                                    <h3>Web Development Course - Programming Hero</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur totam nesciunt unde velit minus exercitationem sit blanditiis ad adipisci fuga nisi molestias sint obcaecati neque minima esse ea, fugiat soluta illum dignissimos ut reiciendis tempore sequi? Ut nam earum atque consequuntur !</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
