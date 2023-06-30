@@ -216,4 +216,43 @@
 
 .about{
     padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .9rem;
+
+}
+
+.heading{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-image{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-image img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+span{
+    color: var(--main-color);
+}
+
+.circle-image{
+    
 }

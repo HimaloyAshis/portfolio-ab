@@ -44,7 +44,7 @@ const Home = () => {
             {/* about section */}
 
             <section className='about' id='about'>
-                <h3 className='aboutMe'>About <span>me</span></h3>
+                <h3 className='heading'>About <span>me</span></h3>
                 <div className='about-image'>
                     <img className='h-72' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
                     <span className='circle-image'></span>
