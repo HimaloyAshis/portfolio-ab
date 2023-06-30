@@ -44,7 +44,15 @@ const Home = () => {
             {/* about section */}
 
             <section>
-                
+                <h3 className='aboutMe'>About <span>me</span></h3>
+                <div className='about-image'>
+                    <img src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
+                    <span className='circle-image'></span>
+                </div>
+                <div className='about-content'>
+                     <h3>MERN-Stack Developer</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque magnam distinctio nesciunt cumque delectus excepturi id illo, in eligendi nobis molestiae voluptates pariatur, voluptas provident aut, incidunt modi ratione.</p>
+                </div>
             </section>
         </>
     );
