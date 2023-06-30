@@ -30,7 +30,7 @@ const Home = () => {
                         <a href="#">Lets talk</a>
                     </div>
                 </div>
-                <img  className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
+                <img className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
                 <div className='image-hover'>
 
                 </div>
@@ -43,15 +43,18 @@ const Home = () => {
 
             {/* about section */}
 
-            <section>
+            <section className='about' id='about'>
                 <h3 className='aboutMe'>About <span>me</span></h3>
                 <div className='about-image'>
-                    <img src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
+                    <img className='h-72' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
                     <span className='circle-image'></span>
                 </div>
                 <div className='about-content'>
-                     <h3>MERN-Stack Developer</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque magnam distinctio nesciunt cumque delectus excepturi id illo, in eligendi nobis molestiae voluptates pariatur, voluptas provident aut, incidunt modi ratione.</p>
+                    <h3>MERN-Stack Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque magnam distinctio nesciunt cumque delectus excepturi id illo, in eligendi nobis molestiae voluptates pariatur, voluptas provident aut, incidunt modi ratione.</p>
+                    <div className="btn-box btns-more">
+                        <a href="" className="btns">Read More</a>
+                    </div>
                 </div>
             </section>
         </>
