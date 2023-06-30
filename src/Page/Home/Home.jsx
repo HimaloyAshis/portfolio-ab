@@ -12,6 +12,7 @@ const Home = () => {
                 <div className='bx bx-menu' id='menu-icon'><FaBars></FaBars></div>
 
                 <nav className='navbar'>
+                    <a href="#home">Home</a>
                     <a href="#about" className='active'>About</a>
                     <a href="#work">Work</a>
                     <a href="#portfolio">Portfolio</a>
@@ -19,7 +20,7 @@ const Home = () => {
 
                 </nav>
             </header>
-            <section className='homes'>
+            <section className='homes' id='home'>
                 <div className='home-content'>
                     <h1 >Hi, I'm <span>Himaloy Bala Ashis</span> </h1>
 
@@ -56,6 +57,26 @@ const Home = () => {
                         <a href="" className="btns">Read More</a>
                     </div>
                 </div>
+            </section>
+            {/* my education */}
+            <section className='education ' id='education'>
+                <h2 className='heading'>My <span>journey</span></h2>
+                <div className="education-row">
+                    <div className="education-column">
+                        <h3 className='title'>Education</h3>
+
+                        <div className="education-box">
+                            <div className="education-content">
+                                <div className="content">
+                                    <div className='year'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </>
     );
