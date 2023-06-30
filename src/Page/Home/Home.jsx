@@ -9,10 +9,10 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>AB</a>
                 <nav className='navbar'>
-                    <a href="#" className='active'>About</a>
-                    <a href="#">Work</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Get in touch</a>
+                    <a href="#about" className='active'>About</a>
+                    <a href="#work">Work</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#get in touch">Get in touch</a>
 
                 </nav>
             </header>
