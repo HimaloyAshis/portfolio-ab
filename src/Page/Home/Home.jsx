@@ -110,8 +110,13 @@ const Home = () => {
                 </div>
 
             </section>
-            <section className='educa'>
-                <h1>All Ok. Well done</h1>
+
+            {/* skill section */}
+
+            <section className='skill' id='skill'>
+                <h2 className='heading'>My <span>Skill</span></h2>
+                
+
             </section>
         </>
     );
