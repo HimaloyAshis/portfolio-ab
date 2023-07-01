@@ -15,6 +15,7 @@ const Home = () => {
                     <a href="#home">Home</a>
                     <a href="#about" className='active'>About</a>
                     <a href="#education">Education</a>
+                    <a href="#skill">Skill</a>
                     <a href="#work">Work</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#get in touch">Get in touch</a>
@@ -63,13 +64,14 @@ const Home = () => {
             <section className='education ' id='education'>
                 <h2 className='heading'>My <span>journey</span></h2>
                 <div className="education-row">
+
                     <div className="education-column">
                         <h3 className='title'>Education</h3>
 
                         <div className="education-box">
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><FaCalendar></FaCalendar>16-20</div>
+                                    <div className="year"><FaCalendar className='fa'></FaCalendar>16-20</div>
                                     <h3>Honours - Bangla, Kabi Nazrul Govt. College</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur totam nesciunt unde velit minus exercitationem sit blanditiis ad adipisci fuga nisi molestias sint obcaecati neque minima esse ea, fugiat soluta illum dignissimos ut reiciendis tempore sequi? Ut nam earum atque consequuntur !</p>
                                 </div>
@@ -84,8 +86,32 @@ const Home = () => {
 
                         </div>
                     </div>
+                    {/* <div className="education-column">
+                        <h3 className='title'>Education</h3>
+
+                        <div className="education-box">
+                            <div className="education-content">
+                                <div className="content">
+                                    <div className="year"><FaCalendar className='fa'></FaCalendar>16-20</div>
+                                    <h3>Honours - Bangla, Kabi Nazrul Govt. College</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur totam nesciunt unde velit minus exercitationem sit blanditiis ad adipisci fuga nisi molestias sint obcaecati neque minima esse ea, fugiat soluta illum dignissimos ut reiciendis tempore sequi? Ut nam earum atque consequuntur !</p>
+                                </div>
+                            </div>
+                            <div className="education-content">
+                                <div className="content">
+                                    <div className="year"><FaCalendar></FaCalendar>jan-23 - jul-23</div>
+                                    <h3>Web Development Course - Programming Hero</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur totam nesciunt unde velit minus exercitationem sit blanditiis ad adipisci fuga nisi molestias sint obcaecati neque minima esse ea, fugiat soluta illum dignissimos ut reiciendis tempore sequi? Ut nam earum atque consequuntur !</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> */}
                 </div>
 
+            </section>
+            <section className='educa'>
+                <h1>All Ok. Well done</h1>
             </section>
         </>
     );
