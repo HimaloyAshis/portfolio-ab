@@ -212,10 +212,12 @@ const Home = () => {
                             <span className='focus'></span>
                         </div>
                     </div>
+                    
                     <div className="textarea-field">
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                         <span className='focus'></span>
                     </div>
+
                     <div className="btn-box btns">
                         <button type="submit" className='btn'>Submit</button>
                     </div>
