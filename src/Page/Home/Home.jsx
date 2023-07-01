@@ -115,7 +115,83 @@ const Home = () => {
 
             <section className='skill' id='skill'>
                 <h2 className='heading'>My <span>Skill</span></h2>
-                
+
+                <div className="skill-row">
+                    <div className="skiil-column">
+                        <h3 className='title'> Coding Skills</h3>
+
+                        <div className="skill-box">
+                            <div className="skill-content">
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>CSS <span>80%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>JavaScript <span>65%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>React.js <span>70%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>Express.js <span>65%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>Node.js <span>64%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>MongoDB <span>68%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="skiil-column">
+                        <h3 className='title'> Tools Skills</h3>
+
+                        <div className="skill-box">
+                            <div className="skill-content">
+                                <div className="progress">
+                                    <h3>Tailwind CSS <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>Bootstrap CSS <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>Firebase <span>95%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>Figma <span>80%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>Vercel <span>95%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>Netelify <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                                <div className="progress">
+                                    <h3>jwt <span>75%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </section>
         </>
