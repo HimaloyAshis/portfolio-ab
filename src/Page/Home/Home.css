@@ -414,10 +414,29 @@ span{
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
 }
 
+.skill-box .skill-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.skill-box .skill-content:hover::before{
+    width: 100%;
+}
+
+
 .skill-content .progress{
-    padding: 1rem 0;
+    padding: .7rem 0;
 }
 
 .skill-content .progress h3{
@@ -431,4 +450,68 @@ span{
     color: var(--text-color);
 }
 
-.skill-content .progress 
+.skill-content .progress .bar{
+    height: 1.8rem;
+    border-radius: .6rem ;
+    border: .2rem solid var(--main-color);
+    padding: .4rem;
+    margin: .5rem 0;
+}
+
+.skill-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+}
+
+
+.skill-column:nth-child(1) .skill-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(3) .bar span{
+    width: 65%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
+    width: 70%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(5) .bar span{
+    width: 65%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(6) .bar span{
+    width: 64%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(7) .bar span{
+    width: 68%;
+}
+
+
+
+.skill-column:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(2) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(3) .bar span{
+    width: 95%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(5) .bar span{
+    width: 95%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(6) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(7) .bar span{
+    width: 75%;
+}
+
+.contact{
+    padding: 2rem 5%;
+}
