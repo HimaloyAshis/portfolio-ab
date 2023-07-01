@@ -113,11 +113,11 @@ const Home = () => {
 
             {/* skill section */}
 
-            <section className='skill' id='skill'>
+            <section className='skills' id='skill'>
                 <h2 className='heading'>My <span>Skill</span></h2>
 
                 <div className="skill-row">
-                    <div className="skiil-column">
+                    <div className="skill-column">
                         <h3 className='title'> Coding Skills</h3>
 
                         <div className="skill-box">
@@ -154,7 +154,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="skiil-column">
+                    <div className="skill-column">
                         <h3 className='title'> Tools Skills</h3>
 
                         <div className="skill-box">
