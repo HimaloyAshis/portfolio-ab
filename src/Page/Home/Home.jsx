@@ -19,7 +19,7 @@ const Home = () => {
             if(top >= offset && top < offset + height){
                 navLinks.forEach(links=>{
                     links.classList.remove('active');
-                    document.querySelector('header nav a [href*=' + id +']').classList.add('active')
+                    document.querySelector('header nav a [href*="' + id + '"]').classList.add('active')
                 })
             }
         })
@@ -38,8 +38,8 @@ const Home = () => {
                 <div className='bx bx-menu' id='menu-icon'><FaBars></FaBars></div>
 
                 <nav className='navbar'>
-                    <a href="#home">Home</a>
-                    <a href="#about" className='active'>About</a>
+                    <a href="#home" className='active'>Home</a>
+                    <a href="#about">About</a>
                     <a href="#education">Education</a>
                     <a href="#skill">Skill</a>
                     <a href="#work">Work</a>
@@ -52,7 +52,7 @@ const Home = () => {
                 <div className='home-content'>
                     <h1 >Hi, I'm <span>Himaloy Bala Ashis</span> </h1>
 
-                    <h3 className='animate'>Im a MERN-Stack developer</h3>
+                    <h3 className='animate'>A MERN-Stack developer</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptate optio laudantium perspiciatis quos architecto modi ut repellat fugiat sit. Incidunt, et. Tempore sed tempora excepturi consequatur quo dolorem at.</p>
                     <div className='btn-box'>
                         <a href="#">Hire me</a>
