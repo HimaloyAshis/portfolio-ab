@@ -3,6 +3,13 @@ import './Home.css'
 import { FaArrowUp, FaBars, FaBeer, FaCalendar, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
+    // toggle icon
+    let menuIcon = document.querySelector('#menu-icon')
+    let navbar = document.querySelector('.navbar')
+
+    menuIcon.onclick=()=>{
+        menuIcon.classList.toggle('bx-x')
+    }
 
     // scroll section
 
@@ -35,7 +42,7 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>HBA</a>
 
-                <div className='bx bx-menu' id='menu-icon'><FaBars></FaBars></div>
+                <div className='bx bx-menu' id='menu-icon'><box-icon name='menu'></box-icon></div>
 
                 <nav className='navbar'>
                     <a href="#home" className='active'>Home</a>
@@ -65,7 +72,7 @@ const Home = () => {
                 </div>
                 <div className='social'>
                     <a href="#"><FaLinkedin></FaLinkedin> </a>
-                    <a href="#"><FaGithub></FaGithub></a>
+                    <a href="https://github.com/Himlaoy"><FaGithub></FaGithub></a>
                     <a href="#"><FaFacebook></FaFacebook></a>
                 </div>
             </section>
