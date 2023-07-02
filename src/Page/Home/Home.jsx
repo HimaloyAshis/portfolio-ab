@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Home.css'
 import { FaArrowUp, FaBars, FaBeer, FaCalendar, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
     // toggle icon
-    let menuIcon = document.querySelector('#menu-icon')
-    let navbar = document.querySelector('.navbar')
+    // let menuIcon = document.querySelector('#menu-icon')
+    // let navbar = document.querySelector('.navbar')
 
-    menuIcon.onclick=()=>{
-        menuIcon.classList.toggle('bx-x')
-    }
+    // menuIcon.onclick=()=>{
+    //     menuIcon.classList.toggle('bx-x')
+    //     navbar.classList.toggle('active')
+    // }
+
+    const menuIconRef = useRef(null);
+  const navbarRef = useRef(null);
+
+  const handleMenuClick = () => {
+    menuIconRef.current.classList.toggle('bx-x');
+    navbarRef.current.classList.toggle('active');
+  };
 
     // scroll section
 
@@ -42,9 +51,9 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>HBA</a>
 
-                <div className='bx bx-menu' id='menu-icon'><box-icon name='menu'></box-icon></div>
+                <div className='bx bx-menu' id='menu-icon' ref={menuIconRef} onClick={handleMenuClick}><box-icon name='menu'></box-icon></div>
 
-                <nav className='navbar'>
+                <nav className='navbar' ref={navbarRef}>
                     <a href="#home" className='active'>Home</a>
                     <a href="#about">About</a>
                     <a href="#education">Education</a>
@@ -52,6 +61,8 @@ const Home = () => {
                     <a href="#work">Work</a>
                     <a href="#contact">Contact</a>
                     <a href="#get in touch">Get in touch</a>
+
+                    <span className="active-nav"></span>
 
                 </nav>
             </header>
@@ -66,14 +77,14 @@ const Home = () => {
                         <a href="#">Lets talk</a>
                     </div>
                 </div>
-                <img className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
+                {/* <img className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" /> */}
                 <div className='image-hover'>
 
                 </div>
                 <div className='social'>
-                    <a href="#"><FaLinkedin></FaLinkedin> </a>
+                    <a href="https://www.linkedin.com/in/himaloy-bala-ashis-2b9a66245/"><FaLinkedin></FaLinkedin> </a>
                     <a href="https://github.com/Himlaoy"><FaGithub></FaGithub></a>
-                    <a href="#"><FaFacebook></FaFacebook></a>
+                    <a href="https://www.facebook.com/himaloyashis"><FaFacebook></FaFacebook></a>
                 </div>
             </section>
 

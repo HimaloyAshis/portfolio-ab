@@ -56,9 +56,9 @@
 .homes{
     height: 100vh;
     display: flex;
-    /* background: url('https://images.unsplash.com/photo-1551415923-58aba9efeb2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBlbmd1aW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60') no-repeat;
+    background: url('../../../public/Photo.jpg') no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     align-items: center;
     padding: 0 5%;
 }
@@ -734,12 +734,38 @@ span{
     .navbar{
         position: absolute;
         top: 100%;
-        left: 0;
+        left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: var(--bg-color);
+        background: var(--main-color);
         box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
 
+    }
+
+    .navbar .active-nav{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgb(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav{
+        left: 0;
+        transition-delay: .25s ;
+    }
+
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
     }
 
     .navbar a{
