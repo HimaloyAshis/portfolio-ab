@@ -515,11 +515,12 @@ span{
 .contact{
     padding: 2rem 5%;
     min-height: auto;
+    margin-bottom: 2rem;
 
 }
 
 .contact form{
-    max-width: 70rem;
+    max-width: 40rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -529,4 +530,82 @@ span{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+/* .btn{
+    background: var(--main-color);
+    width: 20px;
+    height: 30px;
+} */
+
+.btn-box .btnss{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 345px;
+    height: 70px;
+}
+
+
+.btn-box .btn{
+    margin: 2rem 0;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: .8rem;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #84d8de;
+    border-radius: 8px;
+    color: #081b29;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.btn-box .btn:hover{
+    color: #00abf0;
+}
+
+.btn-box .btn::before{
+    content: '';
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before{
+    width: 100%;
+}
+
+.contact .input-box form .input-field{
+    position: relative;
+    width: 60%;
+    margin: .9rem 0;
+}
+
+.contact form .input-box  .input-field input,
+.contact  form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    /* margin: ; */
+    font-size: 1rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
 }
