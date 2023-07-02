@@ -1,9 +1,16 @@
 import React from 'react';
 import './Home.css'
-import { Link } from 'react-router-dom';
-import { FaBars, FaBeer, FaCalendar, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaArrowUp, FaBars, FaBeer, FaCalendar, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
+
+    // scroll section
+
+    window.scroll=()=>{
+        let header = document.querySelector('header')
+        header.classList.toggle('sticky', window.scrollY>100)
+    }
+
     return (
         <>
             <header className='header'>
@@ -17,7 +24,7 @@ const Home = () => {
                     <a href="#education">Education</a>
                     <a href="#skill">Skill</a>
                     <a href="#work">Work</a>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
                     <a href="#get in touch">Get in touch</a>
 
                 </nav>
@@ -234,6 +241,18 @@ const Home = () => {
 
                 </form>
             </section>
+
+            {/* footer section */}
+
+            <footer className='footer'>
+                <div className="footer-text">
+                    <p>Coppy &copy; 2023 by Himaloy | All Right reserved</p>
+                </div>
+                <div className="footer-icon">
+                    <a href="#"><FaArrowUp></FaArrowUp></a>
+                </div>
+
+            </footer>
         </>
     );
 };
