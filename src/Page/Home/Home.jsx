@@ -1,8 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Home.css'
 import { FaArrowUp, FaBars, FaBeer, FaCalendar, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
+
+    // This is prohibited to change the dom directly
+
     // toggle icon
     // let menuIcon = document.querySelector('#menu-icon')
     // let navbar = document.querySelector('.navbar')
@@ -12,28 +15,39 @@ const Home = () => {
     //     navbar.classList.toggle('active')
     // }
 
+    
     const menuIconRef = useRef(null);
-  const navbarRef = useRef(null);
+    const navbarRef = useRef(null);
 
-  const handleMenuClick = () => {
-    menuIconRef.current.classList.toggle('bx-x');
-    navbarRef.current.classList.toggle('active');
-  };
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+
+    const handleMenuClick = () => {
+
+        // menuIconRef.current.classList.toggle('bx-x');
+        // navbarRef.current.classList.toggle('active');
+
+        setIsMenuOpen( !isMenuOpen)
+    };
+
+    const handleMenuItemClick =()=>{
+        setIsMenuOpen(false)
+    }
 
     // scroll section
 
     let sections = document.querySelectorAll('section')
     let navLinks = document.querySelectorAll('header nav a')
 
-    window.onscroll=()=>{
-        sections.forEach(sec=>{
+    window.onscroll = () => {
+        sections.forEach(sec => {
             let top = window.scrollY;
             let offset = sec.offsetTop - 100;
             let height = sec.offsetHeight;
             let id = sec.getAttribute('id')
 
-            if(top >= offset && top < offset + height){
-                navLinks.forEach(links=>{
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach(links => {
                     links.classList.remove('active');
                     document.querySelector('header nav a [href*="' + id + '"]').classList.add('active')
                 })
@@ -43,7 +57,14 @@ const Home = () => {
 
 
         let header = document.querySelector('header')
-        header.classList.toggle('sticky', window.scrollY>100)
+        header.classList.toggle('sticky', window.scrollY > 100)
+
+
+
+        // const handleMenuClick = () => {
+        //     menuIconRef.current.classList.remove('bx-x');
+        //     navbarRef.current.classList.remove('active');
+        // }
     }
 
     return (
@@ -51,16 +72,16 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>HBA</a>
 
-                <div className='bx bx-menu' id='menu-icon' ref={menuIconRef} onClick={handleMenuClick}><box-icon name='menu'></box-icon></div>
+                <div className={`bx bx-menu ${isMenuOpen? 'bx-x': ''}`} id='menu-icon' ref={menuIconRef} onClick={handleMenuClick}><box-icon name='menu'></box-icon></div>
 
-                <nav className='navbar' ref={navbarRef}>
-                    <a href="#home" className='active'>Home</a>
-                    <a href="#about">About</a>
-                    <a href="#education">Education</a>
-                    <a href="#skill">Skill</a>
-                    <a href="#work">Work</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#get in touch">Get in touch</a>
+                <nav className={`navbar ${isMenuOpen ? 'active': ''}`} ref={navbarRef}>
+                    <a onClick={handleMenuItemClick} href="#home" className='active'>Home</a>
+                    <a onClick={handleMenuItemClick} href="#about">About</a>
+                    <a onClick={handleMenuItemClick} href="#education">Education</a>
+                    <a onClick={handleMenuItemClick} href="#skill">Skill</a>
+                    <a onClick={handleMenuItemClick} href="#work">Work</a>
+                    <a onClick={handleMenuItemClick} href="#contact">Contact</a>
+                    <a onClick={handleMenuItemClick} href="#get in touch">Get in touch</a>
 
                     <span className="active-nav"></span>
 
@@ -266,7 +287,7 @@ const Home = () => {
                             <span className='focus'></span>
                         </div>
                     </div>
-                    
+
                     <div className="textarea-field">
                         <textarea name="" id="" cols="30" placeholder='Type your message' rows="10"></textarea>
                         <span className='focus'></span>

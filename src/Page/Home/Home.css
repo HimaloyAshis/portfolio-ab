@@ -65,6 +65,7 @@
 
 .home-content{
     max-width: 40rem;
+    z-index: 99;
 }
 
 .home-content h1{
@@ -203,7 +204,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background: transparent;
     /* border: 2px solid salmon; */
@@ -772,6 +773,22 @@ span{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+        transform: translate(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+    
+    .navbar.active a{
+        transform: translate(0);
+        transition-delay: .25s;
+
+
     }
 
+    .homes .image-hover{
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
+    
 }
