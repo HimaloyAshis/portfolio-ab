@@ -214,7 +214,7 @@ const Home = () => {
                     </div>
                     
                     <div className="textarea-field">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" id="" cols="30" placeholder='Type your message' rows="10"></textarea>
                         <span className='focus'></span>
                     </div>
 
