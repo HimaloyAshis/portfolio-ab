@@ -204,11 +204,11 @@ const Home = () => {
                 <form action="">
                     <div className="input-box">
                         <div className="input-field">
-                            <input type="email" name="email" placeholder='email' id="" />
+                            <input type="text" name="email" placeholder='Full name' id="" />
                             <span className='focus'></span>
                         </div>
                         <div className="input-field">
-                            <input type="text" name="address" placeholder='address' id="" />
+                            <input type="email" name="address" placeholder='Email address' id="" />
                             <span className='focus'></span>
                         </div>
                     </div>
@@ -218,7 +218,7 @@ const Home = () => {
                             <span className='focus'></span>
                         </div>
                         <div className="input-field">
-                            <input type="text" name="email" placeholder='email subject' id="" />
+                            <input type="text" name="email" placeholder='Email subject' id="" />
                             <span className='focus'></span>
                         </div>
                     </div>
