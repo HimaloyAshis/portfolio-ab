@@ -13,12 +13,12 @@
     align-items: center;
     z-index: 100;
     /* text-decoration: none; */
-    transition: .3s;
+    transition: .5s;
 
 }
 
 .header.sticky{
-    background: yellowgreen;
+    background: var(--bg-color);
 }
 
 #menu-icon{
