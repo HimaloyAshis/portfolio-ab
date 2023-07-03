@@ -22,7 +22,7 @@
 }
 
 #menu-icon{
-
+    position: relative;
     font-size: 3rem;
     cursor: pointer;
     color: #ededee;
@@ -31,11 +31,16 @@
 }
 
 .Logo{
+    position: relative;
     font-size: 25px;
     text-decoration: none;
     font-weight: 600;
     color: #ededee;
 
+}
+
+.navbar{
+    position: relative;
 }
 
 .navbar a{
@@ -76,14 +81,33 @@
 
 .home-content .animate{
     position: relative;
-    width: 32.3rem;
+    width: 29rem;
 }
 
-.home-content h3{
+.home-content .animate {
     font-size: 2.3rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px var(--main-color)
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgTex 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.home-content .animate::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: .2rem solid var(--main-color);
+    z-index: -1;
+    animation: homeCursorTex 6s linear infinite;
+    animation-delay: 2s;
 }
 
 .home-content p{
@@ -623,6 +647,89 @@ span{
 
 } */
 
+.works{
+    padding: 6rem 5%;
+    padding-bottom: 10rem;
+}
+
+.works .image-box img{
+    /* width: 200px; */
+}
+
+.container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container .card{
+    position: relative;
+    /* left: -6%; */
+    width: 25rem;
+    height: 30rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .7);
+
+}
+
+.card .headings{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.7rem;
+    text-align: center;
+}
+
+.card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    background: var(--second-bg-color);
+    transition: all 0.5s cubic-bezier(.48 , -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card:hover .content{
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
+
+}
+
+.content .links a{
+    padding: .1rem;
+    width: 25%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.card .image-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card .image-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
 
 .contact form .input-box  .input-field{
     position: relative;
@@ -697,6 +804,26 @@ span{
     width: 100%;
 
 }
+
+.animation{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: yellowgreen;
+    z-index: 98;
+}
+
+.Logo .animation,
+.navbar .animation,
+#menu-icon .animation{
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
+
+
 
 @media (max-width: 1200px) {
     html{
@@ -822,12 +949,20 @@ span{
         background: var(--bg-color);
         opacity: .6;
     }
+
+    .container{
+        display: block;
+    }
 }
 
 @media (max-width: 462px){
     .home-content h1{
         font-size: 5.2rem;
 
+    }
+    .container{
+        display: block;
+        margin-left: 1rem;
     }
 
     .education{
@@ -863,4 +998,48 @@ span{
     }
 
 
+}
+
+
+
+/* keyframe  */
+
+@keyframes homeBgTex {
+    0%,
+    10%,
+    100%{
+        background-position: -33rem 0;
+    }
+
+    65%,
+    85%{
+        background-position: 0 0;
+    }
+}
+
+
+@keyframes homeCursorTex {
+    0%,
+    10%,
+    100%{
+         width: 0;
+    }
+
+    65%,
+    78%,
+    85%{
+        width: 100%;
+        opacity: 1;
+    }
+    75%,
+    81%{
+        opacity: 0;
+    }
+}
+
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
 }

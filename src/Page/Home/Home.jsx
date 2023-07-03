@@ -15,7 +15,7 @@ const Home = () => {
     //     navbar.classList.toggle('active')
     // }
 
-    
+
     const menuIconRef = useRef(null);
     const navbarRef = useRef(null);
 
@@ -27,10 +27,10 @@ const Home = () => {
         // menuIconRef.current.classList.toggle('bx-x');
         // navbarRef.current.classList.toggle('active');
 
-        setIsMenuOpen( !isMenuOpen)
+        setIsMenuOpen(!isMenuOpen)
     };
 
-    const handleMenuItemClick =()=>{
+    const handleMenuItemClick = () => {
         setIsMenuOpen(false)
     }
 
@@ -70,20 +70,20 @@ const Home = () => {
     return (
         <>
             <header className='header'>
-                <a href="#" className='Logo'>HBA</a>
+                <a href="#" className='Logo'>HBA<span className='animation' style={{ "--i": 1 }}></span></a>
 
-                <div className={`bx bx-menu ${isMenuOpen? 'bx-x': ''}`} id='menu-icon' ref={menuIconRef} onClick={handleMenuClick}><box-icon name='menu'></box-icon></div>
+                <div className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`} id='menu-icon' ref={menuIconRef} onClick={handleMenuClick}><box-icon name='menu'></box-icon><span className='animation' style={{ "--i": 2 }}></span></div>
 
-                <nav className={`navbar ${isMenuOpen ? 'active': ''}`} ref={navbarRef}>
+                <nav className={`navbar ${isMenuOpen ? 'active' : ''}`} ref={navbarRef}>
                     <a onClick={handleMenuItemClick} href="#home" className='active'>Home</a>
                     <a onClick={handleMenuItemClick} href="#about">About</a>
                     <a onClick={handleMenuItemClick} href="#education">Education</a>
                     <a onClick={handleMenuItemClick} href="#skill">Skill</a>
                     <a onClick={handleMenuItemClick} href="#work">Work</a>
-                    <a onClick={handleMenuItemClick} href="#contact">Contact</a>
-                    <a onClick={handleMenuItemClick} href="#get in touch">Get in touch</a>
+                    <a onClick={handleMenuItemClick} href="#touch">Get in touch</a>
 
                     <span className="active-nav"></span>
+                    <span className='animation' style={{ "--i": 2 }}></span>
 
                 </nav>
             </header>
@@ -260,11 +260,76 @@ const Home = () => {
 
             </section>
 
+            {/* Works section */}
+            <section className="works" id="work">
+                <h2 className='heading'>My <span>Project</span></h2>
+                <div className="container">
+                    <div className="card">
+                        <div className="image-box">
+                            <img src="../../../public/works/2023-07-03 (8).png" alt="" />
+                        </div>
+                        <div className="content">
+                            <h2 className='headings'>Musica</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
+                            <div className='btn-box links'>
+                                <a href="https://music-instrument-45315.web.app/">Live site</a>
+                                <a href="https://github.com/Himlaoy/musica-a-music-learning-academy">Client</a>
+                                <a href="https://github.com/Himlaoy/Musica-a-music-learning-server">Server</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="image-box">
+                            <img src="../../../public/works/2023-07-03 (chef).png" alt="" />
+                        </div>
+                        <div className="content">
+                            <h2 className='headings'>ToysLand</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
+                            <div className='btn-box links'>
+                                <a href="https://toy-verse-assignment.web.app/">Live site</a>
+                                <a href="https://github.com/Himlaoy/ToysLand-client-side">Client</a>
+                                <a href="https://github.com/Himlaoy/ToysLand-server-side">Server</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="image-box">
+                            <img src="../../../public/works/2023-07-03 (toothsome).png" alt="" />
+                        </div>
+                        <div className="content">
+                            <h2 className='headings'>Toothsome Space</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
+                            <div className='btn-box links'>
+                                <a href="https://chef-authentication.web.app/">Live site</a>
+                                <a href="https://github.com/Himlaoy/chef-client-side">Client</a>
+                                <a href="https://github.com/Himlaoy/chef-server-side">Server</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="image-box">
+                            <img src="../../../public/works/2023-07-03 (8).png" alt="" />
+                        </div>
+                        <div className="content">
+                            <h2 className='headings'>Musica</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
+                            <div className='btn-box links'>
+                                <a href="https://music-instrument-45315.web.app/">Live site</a>
+                                <a href="https://github.com/Himlaoy/musica-a-music-learning-academy">Client</a>
+                                <a href="https://github.com/Himlaoy/Musica-a-music-learning-server">Server</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* contact section */}
 
-            <section className="contact" id="contact">
+            <section className="contact" id="touch">
 
-                <h2 className='heading'>Contact <span>Me!</span></h2>
+                <h2 className='heading'>Get in <span>touch!</span></h2>
+
+                <h3 className='heading'>Hit me up if you are interested in work together</h3>
 
                 <form action="">
                     <div className="input-box">
