@@ -95,7 +95,7 @@ const Home = () => {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptate optio laudantium perspiciatis quos architecto modi ut repellat fugiat sit. Incidunt, et. Tempore sed tempora excepturi consequatur quo dolorem at.</p>
                     <div className='btn-box'>
                         <a href="#">Hire me</a>
-                        <a href="#">Lets talk</a>
+                        <a href="https://drive.google.com/file/d/1jzLaEEai_BWdCsdA2KiNIaM3iORrB66w/view">Download CV</a>
                     </div>
                 </div>
                 {/* <img className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" /> */}
@@ -114,7 +114,7 @@ const Home = () => {
             <section className='about' id='about'>
                 <h3 className='heading'>About <span>me</span></h3>
                 <div className='about-image'>
-                    <img className='h-72' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" />
+                    <img className='h-72' src="/Ashish Fiverrr copy.png 5.png" alt="" />
                     <span className='circle-image'></span>
                 </div>
                 <div className='about-content'>
