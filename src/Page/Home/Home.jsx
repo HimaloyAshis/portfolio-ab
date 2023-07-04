@@ -266,7 +266,7 @@ const Home = () => {
                 <div className="container">
                     <div className="card">
                         <div className="image-box">
-                            <img src="../../../public/works/2023-07-03 (8).png" alt="" />
+                            <img src="/works/2023-07-03 (8).png" alt="" />
                         </div>
                         <div className="content">
                             <h2 className='headings'>Musica</h2>
@@ -280,7 +280,7 @@ const Home = () => {
                     </div>
                     <div className="card">
                         <div className="image-box">
-                            <img src="../../../public/works/2023-07-03 (chef).png" alt="" />
+                            <img src="/works/2023-07-03 (chef).png" alt="" />
                         </div>
                         <div className="content">
                             <h2 className='headings'>ToysLand</h2>
@@ -294,7 +294,7 @@ const Home = () => {
                     </div>
                     <div className="card">
                         <div className="image-box">
-                            <img src="../../../public/works/2023-07-03 (toothsome).png" alt="" />
+                            <img src="/works/2023-07-03 (toothsome).png" alt="" />
                         </div>
                         <div className="content">
                             <h2 className='headings'>Toothsome Space</h2>
@@ -308,7 +308,7 @@ const Home = () => {
                     </div>
                     <div className="card">
                         <div className="image-box">
-                            <img src="../../../public/works/2023-07-03 (8).png" alt="" />
+                            <img src="/works/2023-07-03 (8).png" alt="" />
                         </div>
                         <div className="content">
                             <h2 className='headings'>Musica</h2>
