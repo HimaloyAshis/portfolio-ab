@@ -108,7 +108,7 @@ import emailjs from '@emailjs/browser';
                     <h1 >Hi, I'm <span>Himaloy Bala Ashis</span> </h1>
 
                     <h3 className='animate'>A MERN-Stack developer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptate optio laudantium perspiciatis quos architecto modi ut repellat fugiat sit. Incidunt, et. Tempore sed tempora excepturi consequatur quo dolorem at.</p>
+                    <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the MERN technology stack.</p>
                     <div className='btn-box'>
                         <a href="mailto:himaloyashis98@gmail.com">Let's Talk</a>
                         <a href="https://drive.google.com/file/d/1jzLaEEai_BWdCsdA2KiNIaM3iORrB66w/view">Download CV</a>
@@ -135,7 +135,7 @@ import emailjs from '@emailjs/browser';
                 </div>
                 <div className='about-content'>
                     <h3>MERN-Stack Developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque magnam distinctio nesciunt cumque delectus excepturi id illo, in eligendi nobis molestiae voluptates pariatur, voluptas provident aut, incidunt modi ratione.</p>
+                    <p>I am MERN-Stack developer, A tech enthusiast and a learner with in search of new things. Always flexible with adapting new technology. I excel in building end-to-end solutions that deliver seamless user experiences. I honed my skills in frontend and backend development, leveraging my expertise in React, Node.js, Express.js, and MongoDB. I possess a keen eye for detail and a strong problem-solving mindset, allowing me to tackle complex challenges and deliver elegant solutions.</p>
                     <div className="btn-box btns-more">
                         <a href="" className="btns">Read More</a>
                     </div>
@@ -154,14 +154,14 @@ import emailjs from '@emailjs/browser';
                                 <div className="content">
                                     <div className="year"><FaCalendar className='fa'></FaCalendar>16-20</div>
                                     <h3>Honours - Bangla, Kabi Nazrul Govt. College</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur totam nesciunt unde velit minus exercitationem sit blanditiis ad adipisci fuga nisi molestias sint obcaecati neque minima esse ea, fugiat soluta illum dignissimos ut reiciendis tempore sequi? Ut nam earum atque consequuntur !</p>
+                                    <p> Here I gathered versatile knowledge about bangla language and literature. That makes me more thinker about man , nature , earth , love and loss etc. </p>
                                 </div>
                             </div>
                             <div className="education-content">
                                 <div className="content">
                                     <div className="year"><FaCalendar></FaCalendar>jan-23 - jul-23</div>
                                     <h3>Web Development Course - Programming Hero</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur totam nesciunt unde velit minus exercitationem sit blanditiis ad adipisci fuga nisi molestias sint obcaecati neque minima esse ea, fugiat soluta illum dignissimos ut reiciendis tempore sequi? Ut nam earum atque consequuntur !</p>
+                                    <p>Here I discover myself in new era of my life acquiring programming language and work with  that was my ultimate dream !</p>
                                 </div>
                             </div>
 
@@ -286,7 +286,7 @@ import emailjs from '@emailjs/browser';
                         </div>
                         <div className="content">
                             <h2 className='headings'>Musica</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
+                            <p>Musica is Full-Stack music instrument learning based web application . That has multiple features , authentication and payment get way system and build with multiple technologies!</p>
                             <div className='btn-box links'>
                                 <a href="https://music-instrument-45315.web.app/">Live site</a>
                                 <a href="https://github.com/Himlaoy/musica-a-music-learning-academy">Client</a>
@@ -300,7 +300,7 @@ import emailjs from '@emailjs/browser';
                         </div>
                         <div className="content">
                             <h2 className='headings'>ToysLand</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
+                            <p>ToysLand is a multiple features based toy e-commerce focused web application! ToysLand has authentication system also and build with multiple technologies</p>
                             <div className='btn-box links'>
                                 <a href="https://toy-verse-assignment.web.app/">Live site</a>
                                 <a href="https://github.com/Himlaoy/ToysLand-client-side">Client</a>
@@ -314,7 +314,7 @@ import emailjs from '@emailjs/browser';
                         </div>
                         <div className="content">
                             <h2 className='headings'>Toothsome Space</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
+                            <p>Toothsome space is chinese restaurant recipe based website having attractive user friendly template . Integrated authentication system and a well decorated !</p>
                             <div className='btn-box links'>
                                 <a href="https://chef-authentication.web.app/">Live site</a>
                                 <a href="https://github.com/Himlaoy/chef-client-side">Client</a>
