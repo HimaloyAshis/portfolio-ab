@@ -94,7 +94,7 @@ const Home = () => {
                     <h3 className='animate'>A MERN-Stack developer</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptate optio laudantium perspiciatis quos architecto modi ut repellat fugiat sit. Incidunt, et. Tempore sed tempora excepturi consequatur quo dolorem at.</p>
                     <div className='btn-box'>
-                        <a href="#">Hire me</a>
+                        <a href="mailto:himaloyashis98@gmail.com">Let's Talk</a>
                         <a href="https://drive.google.com/file/d/1jzLaEEai_BWdCsdA2KiNIaM3iORrB66w/view">Download CV</a>
                     </div>
                 </div>
