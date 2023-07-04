@@ -1,8 +1,11 @@
 import React, { useRef, useState } from 'react';
 import './Home.css'
 import { FaArrowUp, FaBars, FaBeer, FaCalendar, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
-const Home = () => {
+
+
+ const Home = () => {
 
     // This is prohibited to change the dom directly
 
@@ -14,6 +17,19 @@ const Home = () => {
     //     menuIcon.classList.toggle('bx-x')
     //     navbar.classList.toggle('active')
     // }
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_lf55o7p', 'template_116g76g', form.current, 'M6oPymgUSraalh4_g')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
 
 
     const menuIconRef = useRef(null);
@@ -325,36 +341,37 @@ const Home = () => {
 
             {/* contact section */}
 
+
             <section className="contact" id="touch">
 
                 <h2 className='heading hkk'>Get in <span>touch!</span></h2>
 
                 <h3 className='headingg'>Hit me up if you are interested in work together</h3>
 
-                <form action="">
+                <form action="" ref={form} onSubmit={sendEmail}>
                     <div className="input-box">
                         <div className="input-field">
-                            <input type="text" name="email" placeholder='Full name' id="" />
+                            <input type="text" name="to_name" placeholder='Full name' id="" />
                             <span className='focus'></span>
                         </div>
                         <div className="input-field">
-                            <input type="email" name="address" placeholder='Email address' id="" />
+                            <input type="email" name="from_name" placeholder='Email address' id="" />
                             <span className='focus'></span>
                         </div>
                     </div>
                     <div className="input-box">
                         <div className="input-field">
-                            <input type="number" name="email" placeholder='Moile' id="" />
+                            <input type="number" name="phone" placeholder='Moile' id="" />
                             <span className='focus'></span>
                         </div>
                         <div className="input-field">
-                            <input type="text" name="email" placeholder='Email subject' id="" />
+                            <input type="text" name="email-subject" placeholder='Email subject' id="" />
                             <span className='focus'></span>
                         </div>
                     </div>
 
                     <div className="textarea-field">
-                        <textarea name="" id="" cols="30" placeholder='Type your message' rows="10"></textarea>
+                        <textarea name="message" id="" cols="30" placeholder='Type your message' rows="10"></textarea>
                         <span className='focus'></span>
                     </div>
 
@@ -379,5 +396,4 @@ const Home = () => {
         </>
     );
 };
-
-export default Home;
+export default Home
