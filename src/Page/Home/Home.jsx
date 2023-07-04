@@ -327,9 +327,9 @@ const Home = () => {
 
             <section className="contact" id="touch">
 
-                <h2 className='heading'>Get in <span>touch!</span></h2>
+                <h2 className='heading hkk'>Get in <span>touch!</span></h2>
 
-                <h3 className='heading'>Hit me up if you are interested in work together</h3>
+                <h3 className='headingg'>Hit me up if you are interested in work together</h3>
 
                 <form action="">
                     <div className="input-box">

@@ -822,6 +822,12 @@ span{
     animation-delay: calc(.3s * var(--i));
 }
 
+.contact .headingg{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
 
 
 
@@ -916,6 +922,13 @@ span{
         pointer-events: none;
         background: var(--bg-color);
         opacity: .6;
+    }
+    
+}
+
+@media (max-width: 660px) {
+    .container{
+        display: block;
     }
     
 }
