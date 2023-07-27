@@ -120,7 +120,7 @@ import emailjs from '@emailjs/browser';
                 </div>
                 <div className='social'>
                     <a href="https://www.linkedin.com/in/himaloy-bala-ashis-2b9a66245/"><FaLinkedin></FaLinkedin> </a>
-                    <a href="https://github.com/Himlaoy"><FaGithub></FaGithub></a>
+                    <a href="https://github.com/HimaloyAshis"><FaGithub></FaGithub></a>
                     <a href="https://www.facebook.com/himaloyashis"><FaFacebook></FaFacebook></a>
                 </div>
             </section>
