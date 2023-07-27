@@ -997,6 +997,13 @@ span{
     }
 }
 
+@media (max-width:375px) {
+    /* #header{
+       display: block;
+    } */
+
+}
+
 @media (max-width: 371px){
     .homes{
         justify-content: center;
@@ -1012,6 +1019,8 @@ span{
 
 
 }
+
+
 
 
 

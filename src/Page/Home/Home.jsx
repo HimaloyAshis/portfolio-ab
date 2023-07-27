@@ -108,7 +108,7 @@ import emailjs from '@emailjs/browser';
                     <h1 >Hi, I'm <span>Himaloy Bala Ashis</span> </h1>
 
                     <h3 className='animate'>A MERN-Stack developer</h3>
-                    <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the MERN technology stack.</p>
+                    <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the MERN technology stack and a enthusiast of Full-Stack technology.</p>
                     <div className='btn-box'>
                         <a href="mailto:himaloyashis98@gmail.com">Let's Talk</a>
                         <a href="https://drive.google.com/file/d/1jzLaEEai_BWdCsdA2KiNIaM3iORrB66w/view">Download CV</a>
