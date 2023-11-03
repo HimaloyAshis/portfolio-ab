@@ -111,7 +111,7 @@ import emailjs from '@emailjs/browser';
                     <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the Web Development technology stack and a enthusiast of Full-Stack technology.</p>
                     <div className='btn-box'>
                         <a href="mailto:himaloyashis98@gmail.com">Let's Talk</a>
-                        <a href="https://drive.google.com/file/d/1gxbefPmlYLQZU2k4czaGK2Pk1recWwIi/view">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1iGRoyUeP70bTOXNUNlx9xPiZK7TwMNnD/view?usp=sharing">Download CV</a>
                     </div>
                 </div>
                 {/* <img className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" /> */}
