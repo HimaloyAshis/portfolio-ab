@@ -107,7 +107,7 @@ import emailjs from '@emailjs/browser';
                 <div className='home-content'>
                     <h1 >Hi, I'm <span>Himaloy Bala Ashis</span> </h1>
 
-                    <h3 className='animate'>A Full-Stack Web Developer</h3>
+                    <h3 className='animate'>A Full-Stack Developer</h3>
                     <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the Web Development technology stack and a enthusiast of Full-Stack technology.</p>
                     <div className='btn-box'>
                         <a href="mailto:himaloyashis98@gmail.com">Let's Talk</a>
