@@ -110,8 +110,8 @@ import emailjs from '@emailjs/browser';
                     <h3 className='animate'>A Full-Stack Developer</h3>
                     <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the Web Development technology stack and a enthusiast of Full-Stack technology.</p>
                     <div className='btn-box'>
-                        <a href="mailto:himaloyashis98@gmail.com">Let's Talk</a>
-                        <a href="https://drive.google.com/drive/folders/1B-gADea1BrwApOF5u3KVbIR4GbZ4FW8B?usp=sharing">Download CV</a>
+                        <a href="mailto:himaloyashis98@gmail.com" target="_blank" rel="noreferrer">Let's Talk</a>
+                        <a href="https://drive.google.com/drive/folders/1B-gADea1BrwApOF5u3KVbIR4GbZ4FW8B?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
                     </div>
                 </div>
                 {/* <img className='object-cover lg:flex h-96' src="../../../public/Ashish Fiverrr copy.png 5.png" alt="" /> */}
@@ -119,9 +119,9 @@ import emailjs from '@emailjs/browser';
 
                 </div>
                 <div className='social'>
-                    <a href="https://www.linkedin.com/in/himaloy-bala-ashish-2b9a66245/"><FaLinkedin></FaLinkedin> </a>
-                    <a href="https://github.com/himaloyashish"><FaGithub></FaGithub></a>
-                    <a href="https://www.facebook.com/himaloyashis"><FaFacebook></FaFacebook></a>
+                    <a href="https://www.linkedin.com/in/himaloy-bala-ashish-2b9a66245/" target="_blank" rel="noreferrer"><FaLinkedin></FaLinkedin> </a>
+                    <a href="https://github.com/himaloyashish" target="_blank" rel="noreferrer"><FaGithub></FaGithub></a>
+                    <a href="https://www.facebook.com/himaloyashis" target="_blank" rel="noreferrer"><FaFacebook></FaFacebook></a>
                 </div>
             </section>
 
@@ -130,7 +130,7 @@ import emailjs from '@emailjs/browser';
             <section className='about' id='about'>
                 <h3 className='heading'>About <span>me</span></h3>
                 <div className='about-image'>
-                    <img className='h-72' src="/Ashish Fiverrr copy.png 5.png" alt="" />
+                    <img className='h-72' src="/WhatsApp_Image_2023-06-23_at_00.14.31_3f4c9267-removebg-preview.png" alt="" />
                     <span className='circle-image'></span>
                 </div>
                 <div className='about-content'>
