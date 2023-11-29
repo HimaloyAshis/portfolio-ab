@@ -130,7 +130,7 @@ import emailjs from '@emailjs/browser';
             <section className='about' id='about'>
                 <h3 className='heading'>About <span>me</span></h3>
                 <div className='about-image'>
-                    <img className='h-72' src="/WhatsApp_Image_2023-06-23_at_00.14.31_3f4c9267-removebg-preview.png" alt="" />
+                    <img className='h-80' src="/WhatsApp_Image_2023-06-23_at_00.14.31_3f4c9267-removebg-preview.png" alt="" />
                     <span className='circle-image'></span>
                 </div>
                 <div className='about-content'>
