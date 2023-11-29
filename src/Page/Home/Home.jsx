@@ -134,8 +134,8 @@ import emailjs from '@emailjs/browser';
                     <span className='circle-image'></span>
                 </div>
                 <div className='about-content'>
-                    <h3>MERN-Stack Developer</h3>
-                    <p>I am MERN-Stack developer, A tech enthusiast and a learner with in search of new things. Always flexible with adapting new technology. I excel in building end-to-end solutions that deliver seamless user experiences. I honed my skills in frontend and backend development, leveraging my expertise in React, Node.js, Express.js, and MongoDB. I possess a keen eye for detail and a strong problem-solving mindset, allowing me to tackle complex challenges and deliver elegant solutions.</p>
+                    <h3>Full-Stack Developer</h3>
+                    <p>I am Full-Stack developer, A tech enthusiast and a learner with in search of new things. Always flexible with adapting new technology. I excel in building end-to-end solutions that deliver seamless user experiences. I honed my skills in frontend and backend development, leveraging my expertise in React, Node.js, Express.js, and MongoDB. I possess a keen eye for detail and a strong problem-solving mindset, allowing me to tackle complex challenges and deliver elegant solutions.</p>
                     <div className="btn-box btns-more">
                         <a href="" className="btns">Read More</a>
                     </div>
