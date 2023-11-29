@@ -286,8 +286,8 @@
 }
 
 .about-image img{
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }

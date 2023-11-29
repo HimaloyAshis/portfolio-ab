@@ -105,7 +105,7 @@ import emailjs from '@emailjs/browser';
             </header>
             <section className='homes' id='home'>
                 <div className='home-content'>
-                    <h1 >Hi, I'm <span>Himaloy Bala Ashis</span> </h1>
+                    <h1 >Hi, I'm <span>Himaloy Bala Ashish</span> </h1>
 
                     <h3 className='animate'>A Full-Stack Developer</h3>
                     <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the Web Development technology stack and a enthusiast of Full-Stack technology.</p>
