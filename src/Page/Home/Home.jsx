@@ -101,7 +101,7 @@ const Home = () => {
                     <a onClick={handleMenuItemClick} href="#about">About</a>
                     <a onClick={handleMenuItemClick} href="#education">Education</a>
                     <a onClick={handleMenuItemClick} href="#skill">Skill</a>
-                    <a onClick={handleMenuItemClick} href="#work">Work</a>
+                    <a onClick={handleMenuItemClick} href="#works">Work</a>
                     <a onClick={handleMenuItemClick} href="#touch">Get in touch</a>
 
                     <span className="active-nav"></span>
