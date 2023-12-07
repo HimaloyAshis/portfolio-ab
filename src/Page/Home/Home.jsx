@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 
 
 
- const Home = () => {
+const Home = () => {
 
     // This is prohibited to change the dom directly
 
@@ -88,7 +88,13 @@ import emailjs from '@emailjs/browser';
             <header className='header'>
                 <a href="#" className='Logo'>HBA<span className='animation' style={{ "--i": 1 }}></span></a>
 
-                <div className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`} id='menu-icon' ref={menuIconRef} onClick={handleMenuClick}><box-icon name='menu'></box-icon><span className='animation' style={{ "--i": 2 }}></span></div>
+                <div className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`} id='menu-icon' 
+                ref={menuIconRef} onClick={handleMenuClick}>
+                    <box-icon name='menu'></box-icon>
+                    <span className='animation' style={{ "--i": 2 }}>
+
+                    </span>
+                </div>
 
                 <nav className={`navbar ${isMenuOpen ? 'active' : ''}`} ref={navbarRef}>
                     <a onClick={handleMenuItemClick} href="#home" className='active'>Home</a>
