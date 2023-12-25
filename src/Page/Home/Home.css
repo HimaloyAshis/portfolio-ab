@@ -295,7 +295,7 @@
 
 .about-image img{
     width: 85%;
-    /* height: 85%; */
+    height: 85%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
@@ -338,7 +338,7 @@ span{
     padding: .7rem;
 }
 
-.btn-box.btns a{
+.btn-box.btns a::before{
     background: var(--second-bg-color);
 }
 
@@ -414,7 +414,7 @@ span{
 
 }
 
-.education-content .content:hover:before{
+.education-content .content:hover::before{
     width: 100%;
 }
 

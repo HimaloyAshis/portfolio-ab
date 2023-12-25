@@ -159,16 +159,16 @@ const Home = () => {
                         <div className="education-box">
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><FaCalendar className='fa'></FaCalendar>16-20</div>
+                                    <div className="year"><FaCalendar className='fa'></FaCalendar>2016-2020</div>
                                     <h3>Honours - Bangla, Kabi Nazrul Govt. College</h3>
                                     <p> Here I gathered versatile knowledge about bangla language and literature. That makes me more thinker about man , nature , earth , love and loss etc. </p>
                                 </div>
                             </div>
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><FaCalendar></FaCalendar>jan-23 - jul-23</div>
+                                    <div className="year"><FaCalendar></FaCalendar>Jan-23 - Aug-23</div>
                                     <h3>Web Development Course - Programming Hero</h3>
-                                    <p>Here I discover myself in new era of my life acquiring programming language and work with  that was my ultimate dream !</p>
+                                    <p>Here I discover myself in new era of my life acquiring programming language and doing code gives me ultimate joy ! </p>
                                 </div>
                             </div>
 
