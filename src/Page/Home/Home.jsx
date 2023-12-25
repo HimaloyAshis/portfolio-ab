@@ -88,8 +88,8 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>HBA<span className='animation' style={{ "--i": 1 }}></span></a>
 
-                <div className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`} id='menu-icon' 
-                ref={menuIconRef} onClick={handleMenuClick}>
+                <div className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`} id='menu-icon'
+                    ref={menuIconRef} onClick={handleMenuClick}>
                     <box-icon name='menu'></box-icon>
                     <span className='animation' style={{ "--i": 2 }}>
 
@@ -114,6 +114,7 @@ const Home = () => {
                     <h1 >Hi, I'm <span>Himaloy Bala Ashish</span> </h1>
 
                     <h3 className='animate'>A Full-Stack Developer</h3>
+
                     <p>A responsive developer With a solid foundation in JavaScript and a deep understanding of the Web Development technology stack and a enthusiast of Full-Stack technology.</p>
                     <div className='btn-box'>
                         <a href="mailto:himaloyashis98@gmail.com" target="_blank" rel="noreferrer">Let's Talk</a>

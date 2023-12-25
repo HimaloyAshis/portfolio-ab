@@ -69,11 +69,16 @@
     color: var(--main-color);
 }
 
+/* section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+} */
 
 .homes{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    background: url('../../../public/Photo.jpg') no-repeat;
+    background: url('/Photo.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -96,7 +101,7 @@
     width: 27rem;
 }
 
-.home-content .animate {
+.home-content .animate{
     font-size: 2.3rem;
     font-weight: 700;
     color: transparent;
@@ -123,16 +128,16 @@
 }
 
 .home-content p{
-    font-size: 16px;
-    margin: 20px 0 40px;
+    font-size: 1rem;
+    margin: 1.2rem 0 2.5rem;
 }
 
 .home-content .btn-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 345px;
-    height: 50px;
+    width: 22rem;
+    height: 3rem;
 }
 
 .btn-box a{
@@ -140,7 +145,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 10rem;
     height: 100%;
     background: #00abf0;
     border: 2px solid #84d8de;
@@ -190,7 +195,7 @@
 
 .social{
     position: absolute;
-    bottom: 1.8rem;
+    bottom: 4rem;
     width: 170px;
     /* background: red; */
     display: flex;
@@ -216,7 +221,7 @@
 }
 
 .social a:hover{
-    color: #081b29;
+    color: #081b29; 
 }
 
 .social a::before{
@@ -244,12 +249,12 @@
     height: 100%;
     background: transparent;
     /* border: 2px solid salmon; */
-    transition: .5s;
+    transition: .6s;
 }
 
 .image-hover:hover{
     background: var(--bg-color);
-    opacity: .6;
+    opacity: .8;
 }
 
 .btns-more{
@@ -265,6 +270,8 @@
     align-items: center;
     flex-direction: column;
     gap: .9rem;
+    padding-top: 3rem;
+
 
 }
 
@@ -277,8 +284,8 @@
 
 .about-image{
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -288,7 +295,7 @@
 
 .about-image img{
     width: 85%;
-    height: 85%;
+    /* height: 85%; */
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
