@@ -11,13 +11,13 @@ const Home = () => {
 
     // toggle icon
 
-    let menuIcon = document.querySelector('#menu-icon')
-    let navbar = document.querySelector('.navbar')
+    // let menuIcon = document.querySelector('#menu-icon')
+    // let navbar = document.querySelector('.navbar')
 
-    menuIcon.onclick = () => {
-        menuIcon.classList.toggle('bx-x')
-        navbar.classList.toggle('active')
-    }
+    // menuIcon.onClick = () => {
+    //     menuIcon.classList.toggle('bx-x')
+    //     navbar.classList.toggle('active')
+    // }
 
     const form = useRef();
 
@@ -90,7 +90,7 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>HBA<span className='animation' style={{ "--i": 1 }}></span></a>
 
-                <div className={`bx bx-menu `} id='menu-icon'
+                <div className={` ${isMenuOpen ? 'bx bx-x' : 'bx bx-menu'}`} id='menu-icon'
                     ref={menuIconRef} onClick={handleMenuClick}>
                     <box-icon name='menu'></box-icon>
                     <span className='animation' style={{ "--i": 2 }}>
@@ -286,7 +286,7 @@ const Home = () => {
             </section>
 
             {/* Works section */}
-            <section className="works" id="work">
+            <section className="works" id="works">
                 <h2 className='heading'>My <span>Project</span></h2>
                 <div className="container">
                     <div className="card">

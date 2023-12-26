@@ -727,7 +727,7 @@ span {
 }
 
 .container {
-    width: 1000px;
+    width: 62.2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -978,6 +978,7 @@ span {
 @media (max-width: 660px) {
     .container {
         display: block;
+        margin: auto;
     }
 
 }
@@ -993,6 +994,11 @@ span {
         flex-direction: column;
     }
 
+    .container{
+        margin: auto;
+        padding-left: 0;
+        margin-left: 0;
+    }
 
     .social {
         width: 160px;
@@ -1014,6 +1020,8 @@ span {
 
     .container {
         display: block;
+        margin: auto;
+        margin-left: 0;
     }
 }
 
@@ -1025,7 +1033,7 @@ span {
 
     .container {
         display: block;
-        margin-left: 1rem;
+        margin-left: 0;
     }
 
     .education {
@@ -1057,6 +1065,11 @@ span {
 @media (max-width: 371px) {
     .homes {
         justify-content: center;
+    }
+
+    .container{
+        margin-left: 0;
+        width: fit-content;
     }
 
     .home-content {
