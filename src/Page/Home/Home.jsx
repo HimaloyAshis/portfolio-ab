@@ -81,8 +81,8 @@ const Home = () => {
         // const handleMenuClick = () => {
         //     
         // }
-        menuIconRef.current.classList.remove('bx-x');
-        navbarRef.current.classList.remove('active');
+        // menuIconRef.current.classList.remove('bx-x');
+        // navbarRef.current.classList.remove('active');
     }
 
     return (
@@ -90,7 +90,7 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>HBA<span className='animation' style={{ "--i": 1 }}></span></a>
 
-                <div className={` ${isMenuOpen ? 'bx bx-x' : 'bx bx-menu'}`} id='menu-icon'
+                <div className={` bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`} id='menu-icon'
                     ref={menuIconRef} onClick={handleMenuClick}>
                     <box-icon name='menu'></box-icon>
                     <span className='animation' style={{ "--i": 2 }}>
