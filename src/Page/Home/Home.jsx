@@ -10,13 +10,14 @@ const Home = () => {
     // This is prohibited to change the dom directly
 
     // toggle icon
-    // let menuIcon = document.querySelector('#menu-icon')
-    // let navbar = document.querySelector('.navbar')
 
-    // menuIcon.onclick=()=>{
-    //     menuIcon.classList.toggle('bx-x')
-    //     navbar.classList.toggle('active')
-    // }
+    let menuIcon = document.querySelector('#menu-icon')
+    let navbar = document.querySelector('.navbar')
+
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bx-x')
+        navbar.classList.toggle('active')
+    }
 
     const form = useRef();
 
@@ -65,7 +66,7 @@ const Home = () => {
             if (top >= offset && top < offset + height) {
                 navLinks.forEach(links => {
                     links.classList.remove('active');
-                    document.querySelector('header nav a [href*=' + id + ']').classList.add('active')
+                    document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
                 })
             }
         })
@@ -78,9 +79,10 @@ const Home = () => {
 
 
         // const handleMenuClick = () => {
-        //     menuIconRef.current.classList.remove('bx-x');
-        //     navbarRef.current.classList.remove('active');
+        //     
         // }
+        menuIconRef.current.classList.remove('bx-x');
+        navbarRef.current.classList.remove('active');
     }
 
     return (
@@ -88,7 +90,7 @@ const Home = () => {
             <header className='header'>
                 <a href="#" className='Logo'>HBA<span className='animation' style={{ "--i": 1 }}></span></a>
 
-                <div className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`} id='menu-icon'
+                <div className={`bx bx-menu `} id='menu-icon'
                     ref={menuIconRef} onClick={handleMenuClick}>
                     <box-icon name='menu'></box-icon>
                     <span className='animation' style={{ "--i": 2 }}>
@@ -295,9 +297,9 @@ const Home = () => {
                             <h2 className='headings'>Musica</h2>
                             <p>Musica is Full-Stack music instrument learning based web application . That has multiple features , authentication and payment get way system and build with multiple technologies!</p>
                             <div className='btn-box links'>
-                                <a href="https://music-instrument-45315.web.app/">Live site</a>
-                                <a href="https://github.com/Himlaoy/musica-a-music-learning-academy">Client</a>
-                                <a href="https://github.com/Himlaoy/Musica-a-music-learning-server">Server</a>
+                                <a href="https://music-instrument-45315.web.app/" target="_blank" rel="noreferrer">Live site</a>
+                                <a href="https://github.com/Himlaoy/musica-a-music-learning-academy" target="_blank" rel="noreferrer">Client</a>
+                                <a href="https://github.com/Himlaoy/Musica-a-music-learning-server" target="_blank" rel="noreferrer">Server</a>
                             </div>
                         </div>
                     </div>
@@ -309,9 +311,9 @@ const Home = () => {
                             <h2 className='headings'>ToysLand</h2>
                             <p>ToysLand is a multiple features based toy e-commerce focused web application! ToysLand has authentication system also and build with multiple technologies</p>
                             <div className='btn-box links'>
-                                <a href="https://toy-verse-assignment.web.app/">Live site</a>
-                                <a href="https://github.com/Himlaoy/ToysLand-client-side">Client</a>
-                                <a href="https://github.com/Himlaoy/ToysLand-server-side">Server</a>
+                                <a target="_blank" rel="noreferrer" href="https://toy-verse-assignment.web.app/">Live site</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Himlaoy/ToysLand-client-side">Client</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Himlaoy/ToysLand-server-side">Server</a>
                             </div>
                         </div>
                     </div>
@@ -323,9 +325,9 @@ const Home = () => {
                             <h2 className='headings'>Toothsome Space</h2>
                             <p>Toothsome space is chinese restaurant recipe based website having attractive user friendly template . Integrated authentication system and a well decorated !</p>
                             <div className='btn-box links'>
-                                <a href="https://chef-authentication.web.app/">Live site</a>
-                                <a href="https://github.com/Himlaoy/chef-client-side">Client</a>
-                                <a href="https://github.com/Himlaoy/chef-server-side">Server</a>
+                                <a target="_blank" rel="noreferrer" href="https://chef-authentication.web.app/">Live site</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Himlaoy/chef-client-side">Client</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Himlaoy/chef-server-side">Server</a>
                             </div>
                         </div>
                     </div>
@@ -337,9 +339,9 @@ const Home = () => {
                             <h2 className='headings'>Musica</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus totam quasi earum ut libero reiciendis quibusdam assumenda debitis, molestiae accusantium veniam quia neque, quas nesciunt consequuntur tempora velit voluptates blanditiis!</p>
                             <div className='btn-box links'>
-                                <a href="https://music-instrument-45315.web.app/">Live site</a>
-                                <a href="https://github.com/Himlaoy/musica-a-music-learning-academy">Client</a>
-                                <a href="https://github.com/Himlaoy/Musica-a-music-learning-server">Server</a>
+                                <a target="_blank" rel="noreferrer" href="https://music-instrument-45315.web.app/">Live site</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Himlaoy/musica-a-music-learning-academy">Client</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Himlaoy/Musica-a-music-learning-server">Server</a>
                             </div>
                         </div>
                     </div>
